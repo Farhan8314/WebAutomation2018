@@ -12,14 +12,14 @@ public class CommonAPI {
     public WebDriver driver = null;
 @BeforeMethod
     public void setUp (){
-    System.setProperty("webdriver.chrome.driver","C:\\Users\\burha\\Documents\\eclipse-workspace\\Farhanproject\\driver\\chromedriver.exe" );
+    System.setProperty("webdriver.chrome.driver","C:\\Users\\sadia\\IdeaProjects\\WebAutomation2018\\driver\\chromedriver.exe");
     driver = new ChromeDriver();
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    driver.get("https://www.ebay.com/");
+
 
 }
-@AfterMethod
+/*@AfterMethod
     public void cleanUp(){
     driver.close();
-}
+}*/
 }
