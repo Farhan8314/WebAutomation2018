@@ -11,7 +11,6 @@ public class Search extends CommonAPI {
    @Test
     public  void search() {
 
-
         LogClass logclass = new LogClass();
         logclass.login();
        driver.findElement(By.className("_1frb")).sendKeys("farhan uddin",Keys.ENTER);
