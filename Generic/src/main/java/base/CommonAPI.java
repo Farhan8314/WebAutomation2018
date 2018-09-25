@@ -15,7 +15,7 @@ public class CommonAPI {
     System.setProperty("webdriver.chrome.driver","C:\\Users\\sadia\\IdeaProjects\\WebAutomation2018\\driver\\chromedriver.exe");
     driver = new ChromeDriver();
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+    driver.get("www.facebook.com");
 
 }
 /*@AfterMethod
