@@ -13,7 +13,7 @@
 
     <test name = "Search Test">
         <classes>
-            <class name="FacebookPackage.Search"/>
+            <class name="SearchPackage.Search"/>
             <!--<class name="menu.MenuPage"/>-->
         </classes>
     </test>

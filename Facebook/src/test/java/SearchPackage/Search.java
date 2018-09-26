@@ -1,14 +1,19 @@
 package SearchPackage;
 
 
+import Homepackage.LoginPage;
 import LoginPackage.LogTestClass;
 import SearchPackage.SearchPage;
 
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Search extends SearchPage {
     SearchPage obOfSearch;
-    LogTestClass logTestClass =new LogTestClass();
+    @BeforeMethod
+    public void initialization(){ obOfSearch= PageFactory.initElements(driver, SearchPage.class);
+    }
 
 
     @Test
