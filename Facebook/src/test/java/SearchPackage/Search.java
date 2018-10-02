@@ -11,13 +11,19 @@ import org.testng.annotations.Test;
 
 public class Search extends SearchPage {
     SearchPage obOfSearch;
+    LoginPage obOfLogin;
     @BeforeMethod
-    public void initialization(){ obOfSearch= PageFactory.initElements(driver, SearchPage.class);
+    public void initialization(){  obOfLogin= PageFactory.initElements(driver,LoginPage.class);
+        obOfSearch= PageFactory.initElements(driver, SearchPage.class);
     }
 
 
     @Test
     public  void search() {
+
+        obOfLogin.inputOnEmailBox();
+        obOfLogin.inputOnPasswordBox();
+        obOfLogin.goToLoginButton();
         obOfSearch.inputSearch();
 
 
