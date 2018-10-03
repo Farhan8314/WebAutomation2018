@@ -13,7 +13,7 @@ public class LoginPage extends CommonAPI {
      public static WebElement inputEmailBox ;
      @FindBy(xpath = "//*[@id=\"pass\"]")
      public static WebElement inputPasswordBox ;
-     @FindBy(xpath = "//*[@id=\"u_0_8\"]")
+     @FindBy(xpath = "//input[@id='u_0_2']")
      public static WebElement pressLoginButton;
      public void inputOnEmailBox(){
           inputEmailBox.click();

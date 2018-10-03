@@ -71,7 +71,7 @@ public class SignUpPage extends CommonAPI {
         firstNameBox.sendKeys(FirstName);
         lastNameBox.sendKeys(LastName);
         emailBox.sendKeys(Email);
-        emailButtonConfirmation.sendKeys(EmailC);
+        //emailButtonConfirmation.sendKeys(EmailC);
         passwordBox.sendKeys(password);
         birthdayDayBox.sendKeys(birthDd);
         birthdayMonthBox.sendKeys(birthDm);

@@ -14,19 +14,21 @@ public class LogTestClass extends LoginPage {
    public void initialization(){ obOfLogin= PageFactory.initElements(driver,LoginPage.class);
     }
     @Test
-    public void TestInputEmailBox (){
+    public void loginTest (){
 
         obOfLogin.inputOnEmailBox();
-    }
-
-    @Test
-    public void TestInputPassword() {
-
         obOfLogin.inputOnPasswordBox();
-    }
-    @Test
-    public void TestGoToLoginButton(){
         obOfLogin.goToLoginButton();
     }
+
+//    @Test
+//    public void TestInputPassword() {
+//
+//        obOfLogin.inputOnPasswordBox();
+//    }
+//    @Test
+//    public void TestGoToLoginButton(){
+//        obOfLogin.goToLoginButton();
+//    }
 }
 
