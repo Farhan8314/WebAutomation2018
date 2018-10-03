@@ -1,7 +1,8 @@
-package SignUpUsignDataProviderPackage;/*
 package SignUpUsignDataProviderPackage;
 
+
 import SignUpPackage.SignUpPage;
+import datProviderUtilityWIthXlsReader.XlsDataReaderUtil;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -19,8 +20,9 @@ public class SignUpTestUsingDtaProvider  extends SignUpPage {
     }
    @DataProvider
     public Iterator<Object[]> supplyData(){
-        ArrayList<Object[]> testData= XlsxDataReaderUtil.getDataFromExcel();
+        ArrayList<Object[]> testData= XlsDataReaderUtil.getDataFromExcel();
         return testData.iterator();
+
     }
     @Test(dataProvider = "supplyData")
     public void signUnTest (String firstName, String lastName, String email,String emailC,String password, String birthDd, String birthDm,String birthDy ) throws InterruptedException {
@@ -36,7 +38,7 @@ public class SignUpTestUsingDtaProvider  extends SignUpPage {
        // objOfHomePage.clikSignIn();
         //objOfSignInPage.switchToSignInForm();
        // TestLogger.log("In Sign In Page");
-        obOfSignUp.signInUsingExcelData(firstName, lastName, email,emailC,password, birthDd,birthDm,birthDy );
+        obOfSignUp.signInUsingExcelData(firstName, lastName, email,emailC,password, birthDm,birthDd,birthDy );
         obOfSignUp.pressFemaleButton();
        // TestLogger.log("Press Female Button " );
         obOfSignUp.pressSignUButton();
@@ -46,4 +48,4 @@ public class SignUpTestUsingDtaProvider  extends SignUpPage {
 
 
 }
-*/
+

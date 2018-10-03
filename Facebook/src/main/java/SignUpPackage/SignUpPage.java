@@ -67,16 +67,17 @@ public class SignUpPage extends CommonAPI {
        signUpButton.click();
     }
 
-    public void signInUsingExcelData (String firstName,String lastName,String email,String emailC,String password, String birthDd, String birthDm,String birthDy) {
-        firstNameBox.sendKeys(firstName);
-        lastNameBox.sendKeys(lastName);
-        emailBox.sendKeys(email);
-        emailButtonConfirmation.sendKeys(emailC);
+    public void signInUsingExcelData (String FirstName,String LastName,String Email,String EmailC,String password, String birthDm, String birthDd,String birthDy) {
+        firstNameBox.sendKeys(FirstName);
+        lastNameBox.sendKeys(LastName);
+        emailBox.sendKeys(Email);
+        emailButtonConfirmation.sendKeys(EmailC);
         passwordBox.sendKeys(password);
         birthdayDayBox.sendKeys(birthDd);
         birthdayMonthBox.sendKeys(birthDm);
         birthdayYearBox.sendKeys(birthDy);
     }
+
 
     }
 

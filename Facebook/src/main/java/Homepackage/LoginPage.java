@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends CommonAPI {
 
-     @FindBy(xpath = "//*[@id=\"email\"]")
+     @FindBy(xpath ="//*[@id=\"email\"]")
      public static WebElement inputEmailBox ;
      @FindBy(xpath = "//*[@id=\"pass\"]")
      public static WebElement inputPasswordBox ;
@@ -17,8 +17,9 @@ public class LoginPage extends CommonAPI {
      public static WebElement pressLoginButton;
      public void inputOnEmailBox(){
           inputEmailBox.click();
-          inputEmailBox.sendKeys("\"ssinf_1989@live.fr\"");
+          inputEmailBox.sendKeys("ssinf_1989@live.fr");
      }
+
      public void inputOnPasswordBox (){
           inputPasswordBox.click();
           inputPasswordBox.sendKeys( "saddockoussa0306$$\"");

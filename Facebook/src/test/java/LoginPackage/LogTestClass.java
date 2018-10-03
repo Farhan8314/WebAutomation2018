@@ -2,6 +2,7 @@ package LoginPackage;
 
 import Homepackage.LoginPage;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.openqa.selenium.chrome.ChromeDriverService;
@@ -17,6 +18,7 @@ public class LogTestClass extends LoginPage {
 
         obOfLogin.inputOnEmailBox();
     }
+
     @Test
     public void TestInputPassword() {
 

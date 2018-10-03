@@ -18,14 +18,14 @@ public class Search extends SearchPage {
     }
 
 
-    @Test
-    public  void search() {
-
-        obOfLogin.inputOnEmailBox();
-        obOfLogin.inputOnPasswordBox();
-        obOfLogin.goToLoginButton();
-        obOfSearch.inputSearch();
-
-
-    }
+//    @Test
+//    public  void search() {
+//
+//        obOfLogin.inputOnEmailBox();
+//        obOfLogin.inputOnPasswordBox();
+//        obOfLogin.goToLoginButton();
+//        obOfSearch.inputSearch();
+//
+//
+//    }
 }

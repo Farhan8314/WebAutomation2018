@@ -8,10 +8,10 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
-    public WebDriver driver = null;
+   public  WebDriver driver = null;
 @BeforeMethod
     public void setUp (){
-    System.setProperty("webdriver.chrome.driver","C:\\Users\\sadia\\IdeaProjects\\WebAutomation2018\\driver\\chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver","C:\\Users\\sadia\\IdeaProjects\\WebAutomation\\Generic\\drivers\\chromedriver.exe");
     driver = new ChromeDriver();
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     driver.get("https://www.facebook.com/");
